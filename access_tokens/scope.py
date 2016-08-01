@@ -164,7 +164,7 @@ class ScopeSerializer(object):
         return [
             (
                 self.serialize_model_grant(model_grant),
-                map__(self.serialize_permission_grant, permissions_grant),
+                map_(self.serialize_permission_grant, permissions_grant),
             )
             for model_grant, permissions_grant
             in scope
