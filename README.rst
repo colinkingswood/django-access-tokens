@@ -2,6 +2,7 @@ django-access-tokens
 ====================
 
 **django-access-tokens** is a Django app for generating secure scoped access tokens.
+This is a tweaked version to work with Python 3
 
 
 Features
