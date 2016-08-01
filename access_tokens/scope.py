@@ -12,6 +12,15 @@ multiple scopes to be combined.
 from itertools import chain, izip_longest
 
 from django.conf import settings
+try:
+    # Python 2
+    from itertools import izip_longest
+    map_ = map
+
+except ImportError:
+    # Python 3
+    from itertools import zip_longest as izip_longest
+    map_ = lambda f, x: list(map(f, x))
 
 
 # Scope generation.
