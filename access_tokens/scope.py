@@ -9,7 +9,7 @@ Scopes can be appended to each other using the plus operator, allowing
 multiple scopes to be combined.
 """
 
-from itertools import chain, izip_longest
+from itertools import chain
 
 from django.conf import settings
 try:
